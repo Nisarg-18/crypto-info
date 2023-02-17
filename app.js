@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const infoRouter = require("./routes/infoRoutes");
+const path = require("path")
 
 const app = express();
 
