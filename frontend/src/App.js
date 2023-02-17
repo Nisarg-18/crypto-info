@@ -1,9 +1,9 @@
-import AppBar from "./components/AppBar";
+import { CryptoInfo } from "./components/CryptoInfo";
 
 function App() {
   return (
     <>
-      <AppBar />
+      <CryptoInfo/>
     </>
   );
 }
