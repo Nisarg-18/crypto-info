@@ -32,15 +32,19 @@ code {
 .logo {
   color: #3dc6c1;
 }
-
+.outer-table {
+  overflow-x: auto;
+}
 table {
   width: 100%;
 }
 th {
   padding-bottom: 10px;
+  min-width: 100%;
 }
 td {
   text-align: center;
   background-color: #2e3241;
   border-bottom: 10px solid #191d28;
+  min-width: 100%;
 }

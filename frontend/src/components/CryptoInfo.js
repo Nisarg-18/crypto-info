@@ -55,36 +55,35 @@ export const CryptoInfo = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:mx-20">
+      <div className="flex flex-col md:mx-20 outer-table">
         <table className="my-5">
           <thead>
             <tr className="text-lg text-gray-400 font-bold">
               <th>#</th>
               <th>Name</th>
-              <th>Last</th>
-              <th>Buy/Sell Price</th>
+              <th>Last (&#8377;)</th>
+              <th>Buy/Sell Price (&#8377;)</th>
               <th>Volume</th>
               <th>Base_Unit</th>
             </tr>
           </thead>
           <tbody>
-
-          {info &&
-            info.map((val, key) => {
-              return (
-                <tr key={key} className="text-lg text-white font-bold">
-                  <td className="py-3">{key + 1}</td>
-                  <td>{val.name}</td>
-                  <td>{val.last}</td>
-                  <td>
-                    {val.buy}/{val.sell}
-                  </td>
-                  <td>{val.volume}</td>
-                  <td>{val.base_unit}</td>
-                </tr>
-              );
-            })}
-            </tbody>
+            {info &&
+              info.map((val, key) => {
+                return (
+                  <tr key={key} className="text-lg text-white font-bold">
+                    <td className="py-3">{key + 1}</td>
+                    <td>{val.name}</td>
+                    <td> {val.last}</td>
+                    <td>
+                      {val.buy} / {val.sell}
+                    </td>
+                    <td>{val.volume}</td>
+                    <td>{val.base_unit}</td>
+                  </tr>
+                );
+              })}
+          </tbody>
         </table>
       </div>
     </>
